@@ -1,0 +1,599 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 1334px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Header  */
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #1c1d21;
+    height: 80px;
+    z-index: 99;
+    display: flex;
+}
+
+.header .right-nav{
+    width: calc(100% - 255px);
+}
+
+.header .nav-item{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    border-bottom: 1px solid #33343a;
+}
+.nav-item-context a{
+    color: #fff;
+    padding: 17px 23px;
+    background-color: #f75058;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.nav-item-context a:hover{
+    background-color: #ed343e;
+}
+
+.nav-item-context a:first-child:hover{
+    background-color: #1aadf7;
+}
+
+.nav-item-context a i{
+    margin-right: 5px;
+}
+
+.nav-item-context a:first-child{
+    background-color: #009eec;
+}
+
+
+.nav-item-close i{
+    color: #fff;
+    background-color: #1c1d21;
+    font-size: 25px;
+}
+
+.nav-item-close{
+    margin-left: 32px;
+}
+
+.header .left-man{
+    width: 255px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #33343a;
+    border-right: 1px solid #33343a;
+}
+
+.header .left-man img{
+    width: auto;
+    height: 45px;
+    position: relative;
+    top: 15px;
+}
+
+/* End Header */
+
+/* Sider */
+.sider{
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    background-color: #1c1d21;
+    width: 270px;
+    border-bottom: 2px solid #33343a;
+    padding-right: 0;
+}
+
+.sider-list{
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    scroll-padding-right: 10px;
+}
+
+
+.sider-item{
+    padding: 15px 10px 15px 30px;
+    font-weight: 400;
+    position: relative;
+    font-size: 17px;
+    cursor: pointer;
+    display: block;
+}
+
+
+.sider-item a,
+.sider-item{
+    color: hsla(0,0%,100%,.75);
+    text-decoration: none;
+}
+
+.sider-item i{
+    display: inline-block;
+    width: 15%;
+}
+
+.sider-item a{
+    display: inline-block;
+    width: 60%;
+}
+
+.sider-item a:hover,
+.sider-item:hover{
+    transition: 0.1s linear;
+    color: #fff;
+}
+
+.sider-item.active,
+.sider-item.active a{
+    font-weight: 500;
+    color: #fff;
+    background-color: #2c2d33;
+}
+
+
+.sider-item:first-child{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    background-image:
+    url(https://www.prydwen.gg/static/game_switcher_bg-d8ae0aa5e494be29d192ddb2f7faa59c.jpg);
+    border-bottom: 1px solid #33343a;
+    background-repeat: repeat;
+}
+
+.sider-item:first-child a{
+    margin-right: 40px;
+}
+
+.sider-item.element-sudo{
+    padding-bottom: 25px;
+    border-top: 1px solid #33343a;
+}
+
+
+
+.sider-item:last-child a,
+.sider-item:last-child{
+    color: #009eec;
+    font-weight: 500;
+}
+
+.sider-item i{
+    margin-right: 3px;
+}
+
+
+
+/* End sider */
+
+.wrapper{
+    position: relative;
+    top: 80px;
+    background-image: linear-gradient(180deg,transparent,#23242a 80%),
+    url(https://www.prydwen.gg/static/website_bg-a2b3d60d119df74a9579e7485d28335c.jpg);
+}
+
+.content{
+    left: 300px;
+    padding: 50px;
+}
+
+.header-content-link a{
+    color: hsla(0,0%,100%,.55);
+    text-decoration: none;
+}
+
+.header-content-link a:hover{
+    color: #009eec;
+    transition: 0.5s linear;
+}
+
+.header-content-description{
+    display: flex;
+    margin-top: 20px;
+}
+
+.header-content-description-img{
+    margin-right: 15px;
+}
+
+.header-content-description-detail span{
+    font-size: 32px;
+    font-weight: 500;
+}
+.header-content-description-detail p{
+    font-size: 17px;
+}
+
+.header-content-description-detail{
+    padding-right: 60px;
+}
+
+.nav-search-infor{
+    margin-top: 150px;
+}
+
+.nav-search-infor-date{
+    width: 100%;
+    border-bottom: 1px solid #33343a;
+    display: flex;
+}
+
+.nav-search-infor-date span{
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 3px solid #1aadf7;
+}
+
+.nav-search-infor-date p{
+    margin-top: 10px;
+    text-align: center;
+    color:hsla(0,0%,100%,.55);
+}
+
+.nav-search-infor-btn{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.nav-search-infor-btn input{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+.star{
+    width: 300px;
+    list-style: none;
+    display: inline-flex;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.star li{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #2c2d33;
+    margin-right: 2px;
+    border: 1px solid #484950;
+    cursor: pointer;
+}
+
+.star li:hover{
+    background-color: #5c636a;
+    transition: 0.5s linear;
+}
+
+.star li.active{
+    background-color: #009eec;
+}
+
+.nav-search-infor-btn .role{
+    display: flex;
+    list-style: none;
+}
+
+.selection-infor{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.selection-infor-btn .star{
+     padding-left: 0;
+     width: 225px;
+}
+
+.selection-infor-input select{
+    width: 590px;
+    padding: 8px 12px;    
+    background-color: #2c2d33;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 1px solid #484950;
+
+}
+
+.selection-infor-btn ul li:first-child{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.selection-infor-reset{
+    margin-left: auto;
+}
+
+.selection-infor-reset span{
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 20px;  
+    background-color: #2c2d33;
+}
+
+.detail-infor{
+    margin-top: 10px;
+}
+
+.detail-infor-title{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #484950;
+    padding: 12px 20px;
+    align-items: center;
+    background-color: #2c2d33;
+}
+
+.detail-infor-title span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.title-note{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.title-note p{
+    font-size: 16px;
+}
+
+.title-note span,
+.title-note span .font-weight-org{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.font-weight-org{
+    color: #df6107;
+    font-weight: 500;
+}
+
+.title-note p .font-weight-org{
+    font-size: 15px;    
+}
+
+.list-img-detail{
+    cursor: pointer;
+    height: 130px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.list-img-detail.Global{
+   background-image: 
+   url(https://www.prydwen.gg/static/tier_global-fad0f4abda2df9930d0c8f1b2f6ce469.jpg);
+}
+
+.list-img-detail.CN{
+    background-image: 
+    url(https://www.prydwen.gg/static/tier_cn-cf115452a25f9fad156e868a33dceccd.jpg);
+}
+
+.list-img-detail.Overall{
+    background-image: 
+    url(https://www.prydwen.gg/static/tier_overall-d071dae75ee199797679ce16a29997c2.jpg);
+}
+
+.list-img-title{
+    background-color: #2c2d33;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-img-title span{
+    font-size: 14px;
+    font-weight: 500;
+}
+/* 
+.list-img-title img{
+    height: 120px;
+} */
+
+.list-img-group{
+    width: 33.2%;
+    padding: 0;
+    border: 2px solid #33343a;
+    margin: 0 3px;
+    opacity: 0.4;
+}
+
+.list-img-group.selected{
+    opacity: 1;
+    border: 2px solid #df6107;
+}
+
+.list-img-group:hover{
+    opacity: 1;
+    transition: 0.8s linear;
+}
+
+.list-img-place{
+    display: flex;
+    width: 100%;
+}
+
+/* Table tier List */
+.table-tier-list{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table-tier-list thead tr th{
+    text-align: center;
+    width: 32%;
+    background-color: #2c2d33;
+    color: #d14251;
+    padding: 10px 20px;
+}
+
+
+.table-tier-list thead tr th:nth-child(4){
+    color: #409756;
+}
+
+.table-tier-list thead tr th:nth-child(3){
+    background-color: #33343a;
+    color: #8799c7;
+}
+
+.table-tier-list thead tr th:first-child{
+    background-color: transparent;
+    width: 5%;
+    padding: 0;
+}
+
+.table-tier-list thead tr{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.table-tier-list tbody tr{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.table-tier-list tbody tr .role-character{
+    width: 5%;
+    background-color: #ff7f7f;
+    color: #1c1d21;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-tier-list tbody tr .role-character.A{
+    background-color: #f9a2a2;
+}
+
+.table-tier-list tbody tr .role-character.B{
+    background-color: #ffbf7f;
+}
+
+.table-tier-list tbody tr .role-character.C{
+    background-color: #ffff7f;
+}
+
+.table-tier-list tbody tr .role-character.D{
+    background-color: #bfff7f;
+}
+
+.table-tier-list tbody tr .role-character.E{
+    background-color: #9df89d;
+}
+
+.table-tier-list tbody tr .role-character.F{
+    background-color: #76f8f8;
+}
+
+.table-tier-list tbody tr td{
+    padding: 10px;
+    width: 32%;
+    text-align: center;
+    background-color: #2c2d33;
+}
+
+.table-tier-list tbody tr td:nth-child(3){
+    background-color: #33343a;
+}
+
+.table-tier-list .character-img{
+    height: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #33343a;
+    position: relative;
+}
+
+
+.table-tier-list .character-detail{
+    width: 30%;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.table-tier-list .character-detail span{
+    font-size: 13px;
+    font-weight: 500;
+    word-wrap: break-word;
+ 
+}
+
+.table-tier-list .character{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-tier-list .character-img .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    padding: 0 3px;
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#e7a427);
+}
+
+.table-tier-list .character-img .overlay.sr{
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#d8bd74);
+}
+
+.table-tier-list .character-img .overlay.r{
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#523e58);
+}
+
+.table-tier-list .character-img .overlay.b{
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#596286);
+}
+
+.table-tier-list .character-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.table-tier-list .character-img span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+
+
+/* End Table tier List */
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+/* End Footer */
